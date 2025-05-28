@@ -1,5 +1,3 @@
-Here's a well-formatted and professional-looking `README.md` for your **Image Moderation API** project, suitable for GitHub:
-
 ---
 
 # 🛡️ Image Moderation API
