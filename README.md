@@ -1,5 +1,3 @@
----
-
 # 🛡️ Image Moderation API
 
 The **Image Moderation API** is a powerful and scalable platform designed to detect and block harmful or unwanted imagery such as:
