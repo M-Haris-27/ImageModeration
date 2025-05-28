@@ -1,6 +1,5 @@
 Image Moderation API
 Image Moderation API is a powerful platform designed to detect and block harmful or unwanted imagery, such as graphic violence, hate symbols, explicit nudity, self-harm depictions, or extremist propaganda. By leveraging Google Cloud Vision, OpenCV, and machine learning models, it ensures safe content delivery. Whether you're a developer, a content platform, or a business, this API provides a seamless solution to moderate images, manage authentication, and track usage. Simplify content safety and focus on your core goals with the Image Moderation API.
-
 Features
 
 User Authentication: Secure bearer token-based authentication with admin privileges.
@@ -10,7 +9,6 @@ RESTful APIs: Well-structured endpoints for seamless integration.
 Scalable Architecture: Built with Docker for scalability and maintainability.
 Frontend UI: Minimal React UI for token generation, image upload, and report viewing.
 
-
 Prerequisites
 Before you begin, ensure you have the following installed on your machine:
 
@@ -19,28 +17,29 @@ Git
 Google Cloud account (for Vision API credentials)
 MongoDB (handled via Docker)
 
-
 Installation
-
-Clone the Repository:
+Clone the Repository
 git clone https://github.com/<your-username>/image-moderation-api.git
 
+Set Up Environment Variables
+Create a .env file in both the backend and frontend directories and add the following variables:
 
-Set Up Environment Variables:Create a .env file in both the backend and frontend directories and add the following variables:
 Backend .env:
-M tenuousODB_URL=mongodb://mongo:27017
+MONGODB_URL=mongodb://mongo:27017
 DATABASE_NAME=imageModeration
 SECRET_KEY=your-super-secret-key-change-this-in-production
 GOOGLE_APPLICATION_CREDENTIALS=/app/credentials.json
 GOOGLE_CLOUD_PROJECT=your-google-cloud-project-id
 INITIAL_ADMIN_TOKEN=admin-12345
 
+
 Frontend .env:
 REACT_APP_API_URL=http://localhost:7000
 
-Note: Ensure you have a valid credentials.json file for Google Cloud Vision and place it at the path specified in GOOGLE_APPLICATION_CREDENTIALS. The docker-compose.yml mounts this file into the container.
 
-Build and Run with Docker:
+
+Note: Ensure you have a valid credentials.json file for Google Cloud Vision and place it at the path specified in GOOGLE_APPLICATION_CREDENTIALS. The docker-compose.yml mounts this file into the container.
+Build and Run with Docker
 docker-compose up --build
 
 The services will start:
@@ -48,9 +47,6 @@ The services will start:
 Backend API at http://localhost:7000.
 Frontend UI at http://localhost:80.
 MongoDB at mongodb://localhost:27017.
-
-
-
 
 Environment Variables
 
@@ -97,7 +93,6 @@ Backend API URL (for frontend)
 http://localhost:7000
 
 
-
 Contributing
 We welcome contributions! To contribute to this project:
 
@@ -108,6 +103,5 @@ Push to the branch (git push origin feature/YourFeatureName).
 Open a pull request.
 
 Note: A Git workflow (e.g., GitHub Flow) is planned but not yet implemented.
-
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
