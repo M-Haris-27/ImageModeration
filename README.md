@@ -39,7 +39,7 @@ Ensure the following are installed on your machine:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/image-moderation-api.git
+git clone https://github.com/M-Haris-27/image-moderation-api.git
 cd image-moderation-api
 ```
 
@@ -127,5 +127,3 @@ We welcome all contributions!
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-
-Let me know if you'd like a logo badge, setup script, or deployment instructions added!
